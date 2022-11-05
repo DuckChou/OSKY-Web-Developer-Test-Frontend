@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+}
+
+
+.whole{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+header{
+  padding: 35px 0;
+  position: relative;
+}
+
+/* left header css */
+
+.head{
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo{
+  width: 11rem;
+}
+
+/* right header css */
+
+.head-right{
+  flex-grow: 1;
+  position: relative;
+  align-self: stretch;
+  
+}
+
+/* top right header css */
+
+.top-menu{
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  color: #00AEEF;
+}
+
+.logout{
+  margin-right: 30px;
+  
+}
+
+.linkedin-icon{
+  margin-right: 38px;
+  font-size: 20px;
+}
+
+.twitter-icon{
+  margin-right: 25px;
+  font-size: 20px;
+
+}
+
+.youtube-icon{
+  margin-right: 25px;
+  font-size: 20px;
+
+}
+
+.top-menu i,span:hover{
+  cursor: pointer;
+}
+
+/* down right header css */
+
+.menu{
+  padding-top: 5px;
+}
+
+.menu ul{
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-evenly;
+  padding-left: 40px;
+}
+
+.menu li{
+  list-style: none;
+  padding: 0 15px 10px;  
+}
+
+.bottom-border{
+  border-bottom: 4px solid #00AEEF;
+}
+
+.menu li:hover{
+  cursor: pointer;
+}
+
+
+/* sub menu css */
+.subMenu{
+  position: absolute;
+  background-color: white;
+  top: 115px;
+  right: 117px;
+  width: 660px;
+  height: 95px;
+}
+
+.sub-content ul{
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  position: relative;
+}
+
+.sub-content li{
+  list-style: none;
+  height: 40px;
+  padding-top: 20px;
+  flex:1 1 0;
+  font-size: 15px;
+  text-align: center;
+  border-right: 1px solid black;
+
+}
+
+.sub-content li:hover{
+  background-color: #00AEEF;
+  cursor: pointer;
+}
+
+
+.sub-content ul li:nth-child(2){
+  height: 50px;
+  padding-top: 10px;
+}
+
+.sub-content ul li:last-child{
+  border-right: 0px;
+}
+
+
+.sub-content i{
+  position: absolute;
+  border: 8px solid white;
+  background-color: white;
+  border-radius: 50%;
+  top: 72px;
+  left: 307px;
+  font-size: 30px;
+}
+
+.sub-content i:hover{
+  cursor: pointer;
+
+}
+
+/* css for hide display */
+.toggle-display{
+  display: none;
+}
+
+/* sidebar button css */
+.sidebar i{
+  font-size: 45px;
+}
+
+.sidebar i:hover{
+  cursor: pointer;
+}
+
+.selected{
+  color: #00AEEF;
+}
+
+/* responsive menu css */
+.responsive-menu{
+  top: 150px;
+  position: absolute;
+  width: 100%;
+  background-color: #F6F4F3;
+  animation: slidein 1s;
+}
+
+
+.responsive-menu div{
+  font-size: 20px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.down{
+  margin-left: 10px;
+}
+
+.responsive-menu div:hover{
+  color: #00AEEF;
+  cursor: pointer;
+}
+
+.res-icons i{
+  font-size: 25px;
+  margin: 0 10px;
+  color: #00AEEF;
+}
+
+.res-option{
+  background-color: white;
+}
+
+
+
+/* main content body css */
+.content{
+  height: 100vh;
+  width: 100%;
+  background-color: #00AEEF;
+}
+
+/* media css for moniter screen width */
+@media (max-width:1140px){
+  .head-right{
+    display: none;
+  }
+  .sidebar{
+    display: contents;
+  }
+
+  .head{
+    justify-content: space-around;
+  }
+}
+
+@media (min-width:1140px){
+  .responsive-menu{
+    display: none;
+  }
+}
+
+
+
+/* css animation for responsive menu */
+@keyframes slidein {
+  from{
+    margin-left: 100%;
+  }
+
+  to{
+    margin-left: 0;
+  }
+}
+
+
